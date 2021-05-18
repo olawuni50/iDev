@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 import {Link as LinkR} from "react-router-dom"
 
 export const Container = styled.div`
-min-height: 692px;
+min-height:692px;
 position: fixed;
 bottom: 0;
 left: 0;
@@ -12,7 +12,9 @@ top: 0;
 z-index: 0;
 overflow: hidden;
 background: linear-gradient(108deg, rgba(1, 147, 86, 1) 0%,
-rgba(10, 201, 122, 1)100%)
+rgba(10, 201, 122, 1)100%);
+
+
 `;
 
 export const FormWrap = styled.div`
@@ -65,6 +67,11 @@ box-shadow: 0 1px 3px rgba(0,0,0, 0.9);
 
 @media screen and (max-width:400px){
     padding: 32px 32px;
+
+@media screen and (max-width: 768px){
+    margin-top: 5rem;
+    position:sticky;
+}
 }
 `
 export const FormH1 = styled.h1`
@@ -107,10 +114,10 @@ font-size: 14px
 
 export const Text2 = styled.span`
 text-align: center;
-margin-top: 24px;
-margin-bottom: 24px;
+margin-top: 15px;
+margin-bottom: 15px;
 color: #fff;
-font-size: 20px
+font-size: 16px
 `
 
 export const FormButtonWrap = styled.button`
@@ -139,5 +146,5 @@ text-decoration:none;
 &:hover{
     transition: all 0.2s ease-in-out;
     color: #010606;
-
+}
 `

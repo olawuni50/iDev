@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 
 
 export const Container = styled.div`
-height: 100%;
+height: 200%;
 position: sticky;
 bottom: 0;
 left: 0;

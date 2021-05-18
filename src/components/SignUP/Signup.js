@@ -21,8 +21,6 @@ const Signup = () => {
                        <FormInput type="password" required/>
                        <FormLabel htmlFor="for">Confirm Password</FormLabel>
                        <FormInput type="password" required/>
-                       <FormLabel htmlFor="for">Choose file</FormLabel>
-                       <FormInput type="file" required/>
                        <FormButton type="submit">Continue</FormButton>
                        
                    

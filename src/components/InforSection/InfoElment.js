@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {motion} from "framer-motion";
 
 export const InfoContainer = styled.div`
 color: #fff;
@@ -28,7 +29,7 @@ align-items: center;
 grid-template-areas: ${({imgStart})=> (imgStart ? `"col2 col1"`: `"col1 col2"`)}; 
 
 @media screen and (max-width: 768px){
-    grid-template-areas: ${({imgStart})=>(imgStart ? `'col1' 'col2'`: `'col1 col1' 'col2 col2'`  )}
+    grid-template-areas: ${({imgStart})=>(imgStart ? `'col1' 'col2'`: `'col1 col1' 'col2 col2'`)}
 }
 `;
 
@@ -49,7 +50,7 @@ padding-top:0;
 padding-bottom: 60px;
 `
 
-export const TopLine = styled.p`
+export const TopLine = styled(motion.p)`
 color: #01bf71;
 font-size: 36px;
 font-weight: 700;
@@ -81,7 +82,6 @@ color: ${({darkText})=> (darkText ? '#010606': '#fff')};
 
 export const BtnWrap = styled.div`
 display: flex;
-
 justify-content: flex-start
 `;
 

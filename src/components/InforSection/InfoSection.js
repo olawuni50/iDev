@@ -10,10 +10,12 @@ description, headline, buttonLabel, alt, dark, dark2, primary}) => {
         <>
             <InfoContainer lightBg={lightBg} id={id}>
                 <InfoWrapper>
-                    <InfoRow imgStart={imgStart}>
+                    <InfoRow imgStart={imgStart}> 
                         <Column1>
                         <TextWrapper>
-                            <TopLine>{topLine}</TopLine> 
+                            <TopLine initial={{x: -500}}
+                  animate={{x:0}}
+                  translate={{delay:50, type:"spring", stiffness: 150}}>{topLine}</TopLine> 
                             <Heading lightText={lightText}>{headline}</Heading>
                             <Subtitle darkText={darkText}>{description}</Subtitle>
                             <BtnWrap>

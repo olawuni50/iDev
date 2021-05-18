@@ -1,9 +1,11 @@
 import React from 'react'
-import { Container, Form, FormContent, FormH1, FormInput, FormLabel, FormWrap, Icon, FormButton,
+import { Container, Form, FormContent, FormH1, FormInput, FormLabel,
+ FormWrap, Icon, FormButton,
 Text, Text2, FormButton2, FormButtonWrap } from './SignElement'
 
 const Sign = () => {
     return (
+
     <Container>
         <FormWrap>
             <Icon to="/">iDev</Icon>

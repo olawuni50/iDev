@@ -16,22 +16,14 @@ const Footer = () => {
                     <FooterLinksWrapper>
                         <FooterLinkItems>
                             <FooterLinkTitle>About Us</FooterLinkTitle>
-                                <FooterLink to="/signin">About</FooterLink>
-                                <FooterLink to="/signin">How it Works</FooterLink>
-                                <FooterLink to="/signin">Testimonials</FooterLink>
-                                <FooterLink to="/signin">Careers</FooterLink>
-                                <FooterLink to="/signin">Terms of Services</FooterLink>
+                                <FooterLink to="about">About</FooterLink>
+                                <FooterLink to="/">How it Works</FooterLink>
+                                <FooterLink to="/">Terms of Services</FooterLink>
                         
                         </FooterLinkItems>
-                        <FooterLinkItems>
-                            <FooterLinkTitle>Videos</FooterLinkTitle>
-                                <FooterLink to="/">Submit Video</FooterLink>
-                                <FooterLink to="/">Ambassadors</FooterLink>
-                                <FooterLink to="/">Agency</FooterLink>
-                                <FooterLink to="/">Influencer</FooterLink>
                         
-                        </FooterLinkItems>
                     </FooterLinksWrapper>
+
                     <FooterLinksWrapper>
                         <FooterLinkItems>
                             <FooterLinkTitle>Social Media</FooterLinkTitle>
@@ -39,15 +31,15 @@ const Footer = () => {
                                 <FooterLink to="/">Facebook</FooterLink>
                                 <FooterLink to="/">YouTube</FooterLink>
                                 <FooterLink to="/">Twitter</FooterLink>
-                        
                         </FooterLinkItems>
+                        </FooterLinksWrapper>
+                        <FooterLinksWrapper>
                         <FooterLinkItems>
                             <FooterLinkTitle>Contact Us</FooterLinkTitle>
                                 <FooterLink to="/">Contact</FooterLink>
                                 <FooterLink to="/">Support</FooterLink>
                                 <FooterLink to="/">Destinations</FooterLink>
                                 <FooterLink to="/">SponsorShip</FooterLink>
-
                         </FooterLinkItems>
                     </FooterLinksWrapper>
                 </FooterLinksContainer>
@@ -56,7 +48,7 @@ const Footer = () => {
                         <SocialLogo to="/" onClick={toggleHome}>
                             iDev
                         </SocialLogo>
-                        <WebsiteRights>iDev {new Date().getFullYear()} All rights reserved.</WebsiteRights>
+                        
                         <SocialIcons>
                             <SocialIconLink href="/" target="_blank" aria-label="Facebook">
                                 <FaFacebook/>
@@ -71,6 +63,7 @@ const Footer = () => {
                                 <FaLinkedin/>
                             </SocialIconLink>
                         </SocialIcons>
+                        <WebsiteRights>iDev {new Date().getFullYear()} All rights reserved.</WebsiteRights>
                     </SocialMediaWrap>
                 </SocialMedia>
             </FooterWrap>

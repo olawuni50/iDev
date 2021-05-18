@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import {FaBars} from "react-icons/fa"
+import {FiAlignRight} from "react-icons/fi"
 import { IconContext } from 'react-icons/lib';
 import { Nav, NavbarContainer, NavbarLogo, MobileIcon,
 NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink} from './Navbar.elements';
@@ -27,9 +27,12 @@ const Navbar = ({toggle}) => {
         <IconContext.Provider value={{color: "#fff"}}>
         <Nav scrollNav={scrollNav}>
             <NavbarContainer> 
-                <NavbarLogo to="/" onClick={toggleHome}>  iDev </NavbarLogo>
+                <NavbarLogo to="/" onClick={toggleHome}
+                initial={{y:-250}}
+                animate={{y:-1}}
+                transition={{delay: 1, type:"spring", stiffness:120}}>iDev </NavbarLogo>
                 <MobileIcon onClick={toggle}>
-                    <FaBars/>
+                    <FiAlignRight/>
                 </MobileIcon>
               <NavMenu>
                 <NavItem>

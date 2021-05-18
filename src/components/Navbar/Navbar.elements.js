@@ -1,6 +1,7 @@
 import styled from "styled-components"
 import {Link as LinkR} from "react-router-dom";
 import {Link as LinkS} from "react-scroll"
+import {motion} from "framer-motion"
 
 export const Nav = styled.nav`
 background: ${({scrollNav})=> (scrollNav ? "#000" : "transparent")};
@@ -26,13 +27,13 @@ height: 80px;
 z-index: 1;
 width: 100%;
 padding: 0 24px;
-max-width: 1100px;
+max-width: auto;
 `
 
-export const NavbarLogo =styled(LinkR)`
-color: #fff;
-justify-self: flex-start; 
-font-size: 2.5rem;
+export const NavbarLogo =styled(motion.LinkR)`
+color: #01bf71;
+justify-self: left; 
+font-size: 3rem;
 display: flex;
 cursor: pointer;
 align-items: center;
@@ -77,6 +78,7 @@ height: 80px;
 export const NavLinks = styled(LinkS)`
 color: #fff;
 display: flex;
+font-size: 20px;
 align-items: center;
 text-decoration: none;
 padding: 0 1rem;
